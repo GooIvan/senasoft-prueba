@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  documento: one
+  orden: MyString
+  fecha: 2025-08-15 11:15:46
+  historia: one
+  profesional_ordena: one
+  profesional_externo: false
+
+two:
+  documento: two
+  orden: MyString
+  fecha: 2025-08-15 11:15:46
+  historia: two
+  profesional_ordena: two
+  profesional_externo: false

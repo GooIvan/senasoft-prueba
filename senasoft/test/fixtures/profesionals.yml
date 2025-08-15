@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codigo: MyString
+  persona: one
+  registro_medico: MyString
+  tipo_prof: one
+
+two:
+  codigo: MyString
+  persona: two
+  registro_medico: MyString
+  tipo_prof: two

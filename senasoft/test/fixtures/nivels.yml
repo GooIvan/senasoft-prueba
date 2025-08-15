@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  eps: one
+  nivel: MyString
+  nombre: MyString
+  regimen: one
+
+two:
+  eps: two
+  nivel: MyString
+  nombre: MyString
+  regimen: two

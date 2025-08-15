@@ -1,0 +1,36 @@
+<% nombre_completo = @persona.nombre1 + " " + @persona.apellido1 + " " + @persona.apellido2 %>
+
+<div style="display: flex; min-height: 100vh; background: #f7f7f7;">
+  <%= render 'shared/sidebar' %>
+  <div style="flex: 1;">
+    <div style="display: flex; align-items: center; justify-content: space-between; background: #f3f6f8; padding: 1rem 2rem; border-bottom: 1px solid #e0e0e0;">
+      <div style="display: flex; align-items: center;">
+        <div style="width: 40px; height: 40px; background: #fdfde7; border: 1px solid #eee; border-radius: 8px; margin-right: 1rem;"></div>
+        <span style="font-size: 1.5rem; font-weight: bold;"><%= nombre_completo %></span>
+      </div>
+    </div>
+    <div style="padding: 2rem; max-width: 1200px; margin: 0 auto;">
+      <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 2rem;">Órdenes de laboratorio</h2>
+      <table style="width: 100%; background: #fff; border-radius: 12px; box-shadow: 0 2px 8px #0001; border-collapse: separate; border-spacing: 0;">
+        <thead>
+          <tr style="background: #fafafa;">
+            <th style="padding: 1rem;">Fecha de la orden</th>
+            <th style="padding: 1rem;">Documento de la orden</th>
+            <th style="padding: 1rem;">Número de la orden</th>
+            <th style="padding: 1rem;">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @ordens.each do |orden| %>
+            <tr style="border-bottom: 1px solid #eee;">
+              <td style="padding: 1rem;"><%= orden.fecha_orden %></td>
+              <td style="padding: 1rem;"><%= orden.documento %></td>
+              <td style="padding: 1rem;"><%= orden.numero_orden %></td>
+              <td style="padding: 1rem;"><button style="background: #eee; border: none; border-radius: 4px; padding: 0.5rem 1rem;">✖ xxx</button></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

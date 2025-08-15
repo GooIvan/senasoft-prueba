@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  prueba: one
+  opcion: MyString
+  valor_ref_min_f: 9.99
+  valor_ref_max_f: 9.99
+  valor_ref_min_m: 9.99
+  valor_ref_max_m: 9.99
+
+two:
+  prueba: two
+  opcion: MyString
+  valor_ref_min_f: 9.99
+  valor_ref_max_f: 9.99
+  valor_ref_min_m: 9.99
+  valor_ref_max_m: 9.99

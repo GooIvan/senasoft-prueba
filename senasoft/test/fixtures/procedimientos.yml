@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cups: one
+  grupo_laboratorio: one
+  metodo: MyString
+
+two:
+  cups: two
+  grupo_laboratorio: two
+  metodo: MyString

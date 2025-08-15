@@ -1,0 +1,32 @@
+
+<div style="display: flex; align-items: center; justify-content: center; min-height: 80vh;">
+  <div style="flex: 1; max-width: 600px; padding: 40px;">
+    <h1 style="font-size: 2.5rem; font-weight: bold;">Iniciar sesión</h1>
+    <p style="margin-bottom: 2rem; color: #444;">Lorem ipsum dolor sit amet consectetur adipiscing elit mattis sit phasellus mollis sit aliquam sit nullam.</p>
+    <div style="background: #fff; border: 1px solid #ccc; border-radius: 8px; padding: 2rem; max-width: 400px; margin: 0 auto;">
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <%= f.label :tipo_identificacion, "Tipo de identificación" %><br>
+          <%= f.select :tipo_identificacion_id, Opcion.where(variable: 'TipoIdentificacion', habilita: true).map { |o| [o.nombre, o.id] }, { prompt: 'Seleccione...' }, { class: 'form-control', required: true } %>
+        </div>
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <%= f.label :numero_identificacion, "Número de identificación" %><br>
+          <%= f.text_field :numero_identificacion, class: 'form-control', required: true, placeholder: 'xxxxxxxxxxxxxxx' %>
+        </div>
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+          <%= f.label :fecha_nacimiento, "Fecha de nacimiento" %><br>
+          <%= f.date_field :fecha_nacimiento, class: 'form-control', required: true, placeholder: 'xxxxxxxxxxxxxxx' %>
+        </div>
+        <div style="text-align: center;">
+          <%= f.submit "Ingresar", class: 'btn', style: 'padding: 0.5rem 2rem; border: 2px solid #222; background: #fff; font-size: 1.2rem; font-weight: bold; border-radius: 4px;' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+    <div style="width: 400px; height: 400px; background: #fdfde7; border: 1px solid #eee; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+      <!-- Aquí puedes poner una imagen o ilustración -->
+      <span style="color: #ccc; font-size: 2rem;">Imagen</span>
+    </div>
+  </div>
+</div>

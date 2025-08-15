@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fecha: 2025-08-15 11:15:58
+  orden: one
+  procedimiento: one
+  prueba: one
+  pruebaopcion: one
+  res_opcion: MyString
+  res_numerico: 9.99
+  res_texto: MyString
+  res_memo: MyText
+  num_procesamientos: 1
+
+two:
+  fecha: 2025-08-15 11:15:58
+  orden: two
+  procedimiento: two
+  prueba: two
+  pruebaopcion: two
+  res_opcion: MyString
+  res_numerico: 9.99
+  res_texto: MyString
+  res_memo: MyText
+  num_procesamientos: 1
